@@ -17,8 +17,17 @@ h2 {
     float: left;
 }
 .navbar-brand {
-    padding: 5px;
-  
+    padding: 5px; 
+}
+.img-thumbnail {
+    width: 100%;
+}
+h5 {
+    color: rgb(5, 197, 197);
+    text-align: center;
+}
+.border-info {
+    border-width: 10px;
 }
 /* replacing this: justify-content-around, in the class */
 /* .content {
