@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Wind Speed</title>
   </head>
-  <body>
+  <body class="container-fluid bg-light">
     
     <!-- nav bar -->
     <!-- nav bar -->
@@ -21,13 +21,13 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="WindSpeed.html">Wind Speed <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
+                Plots <span class="sr-only">(current)</span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="MaxTemperature.html">Max Temperature</a>
@@ -35,10 +35,7 @@
                 <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
                 <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
                 </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
+              </li>              
               <li class="nav-item">
                 <a class="nav-link" href="Comparison.html" tabindex="-1" aria-disabled="true">Comparison</a>
               </li>
@@ -48,7 +45,78 @@
             </ul>
         </div>
     </nav>
-    <h1>Latitude vs. Wind Speed</h1>
+   
+    <!-- grid with content  -->       
+    <div class="container-fluid pt-5 ">
+    <!-- row 1 -->
+    <div class="row justify-content-around">
+        <div class="col-12 bg-white py-5">
+            <h1>Latitude and Wind Speed</h1>
+            <hr class="mt-4 mb-1">                   
+        </div> 
+    </div>
+    <!-- row 2 -->
+    <div class="row justify-content-around py-5 bg-light">
+        <!-- card column -->
+        <div class="col-lg-6 col-md-12">
+        <!-- ------------- -->
+        <!-- <div class="card mt-5 " style="max-width: auto;">
+        <div class="row no-gutters">
+           
+          <div class="col-md-6 col-sm-12">
+            <img src="Resources/images/Fig4.png" class="card-img" alt="Wind Speed">
+          </div>
+        
+          <div class="col-md-6 col-sm-12">
+            <div class="card-body">
+              <h5 class="card-title">Is there a relationship between latitude and wind speed?</h5>
+              <p class="card-text">There is a week correlation between latitude and wind speed. In the Northern hemisphere the r value is .23. Similarly, it's -.21 in the Southern hemisphere. The figure indicates that the wind speeds vary across all points. </p>
+              <p class="card-text"><small class="text-muted">Last updated Dec 2021</small></p>
+            </div>
+          </div>
+        </div>
+        </div> -->
+
+        <!-- DIFFERENT CARD LAYOUT -->
+        <div class="card border-info" style="width: auto;">
+            <img src="Resources/images/Fig4.png" class="card-img-top" alt="Wind Speed">
+            <div class="card-body">
+              <h5 class="card-title">Is there a relationship between latitude and wind speed?</h5>
+              <p class="card-text">There is a week correlation between latitude and wind speed. In the Northern hemisphere the r value is .23. Similarly, it's -.21 in the Southern hemisphere. The figure indicates that the wind speeds vary across all points.</p>
+            </div>
+          </div>
+        </div> 
+
+
+    <!-- visualizations column -->
+        <div class="col-lg-5 offset-lg-.5 col-md-12 bg-white pt-5">
+            <h2>Visualizations</h2>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-3">
+                    <a target="_blank" href="MaxTemperature.html">
+                        <img src="Resources/images/Fig1.png" class="img-fluid" alt="MaxTemperature">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <a target="_blank" href="Humidity.html">
+                        <img src="Resources/images/Fig2.png" class="img-fluid" alt="Humidity">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <a target="_blank" href="Cloudiness.html">
+                        <img src="Resources/images/Fig3.png" class="img-fluid" alt="Cloudiness">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <a target="_blank" href="WindSpeed.html">
+                        <img src="Resources/images/Fig4.png" class="img-fluid" alt="WindSpeed">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

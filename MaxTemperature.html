@@ -10,45 +10,95 @@
     <link rel="stylesheet" href="style.css">
     <title>Max Temperature</title>
   </head>
-  <body>
+  <body class="container-fluid bg-light">
     
     <!-- nav bar -->
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
-        <a class="navbar-brand text-white" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+   <!-- nav bar -->
+   <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <a class="navbar-brand text-white" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="MaxTemperature.html">Max Tepmerature <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="MaxTemperature.html">Max Temperature</a>
-                <a class="dropdown-item" href="Humidity.html">Humidity</a>            
-                <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Comparison.html" tabindex="-1" aria-disabled="true">Comparison</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Data.html" tabindex="-1" aria-disabled="true">Data</a>
-              </li>
-            </ul>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto"> 
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots <span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="MaxTemperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="Humidity.html">Humidity</a>            
+            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+            </div>
+          </li>              
+          <li class="nav-item">
+            <a class="nav-link" href="Comparison.html" tabindex="-1" aria-disabled="true">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Data.html" tabindex="-1" aria-disabled="true">Data</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+   
+<!-- grid with content  -->       
+<div class="container-fluid pt-5 ">
+    <!-- row 1 -->
+    <div class="row justify-content-around">
+        <div class="col-12 bg-white py-5">
+            <h1>Latitude and Temperature</h1>
+            <hr class="mt-4 mb-1">                   
+        </div> 
+    </div>
+    <!-- row 2 -->
+    <div class="row justify-content-around py-5 bg-light">
+        <!-- card column -->
+        <div class="col-lg-6 col-md-12">
+        <div class="card border-info" style="width: auto;">
+            <img src="Resources/images/Fig1.png" class="card-img-top" alt="Max Temperature">
+            <div class="card-body">
+              <h5 class="card-title">Is there a relationship between latitude and temperature?</h5>
+              <p class="card-text">I think we all know the answer to this one by now...YES! There is a strong correlation between latitude and max temperatures. In the Northern hemisphere the r value is -.89. Similarly, it's .71 in the Southern hemisphere. As the latitude approaches 0, the temperatures increase consistently.</p>
+            </div>
         </div>
-    </nav>
-    <h1>Latitude vs. Max Temperature</h1>
+        </div> 
+
+
+    <!-- visualizations column -->
+        <div class="col-lg-5 offset-lg-.5 col-md-12 bg-white pt-5">
+            <h2>Visualizations</h2>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-3">
+                    <a target="_blank" href="MaxTemperature.html">
+                        <img src="Resources/images/Fig1.png" class="img-fluid" alt="MaxTemperature">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <a target="_blank" href="Humidity.html">
+                        <img src="Resources/images/Fig2.png" class="img-fluid" alt="Humidity">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <a target="_blank" href="Cloudiness.html">
+                        <img src="Resources/images/Fig3.png" class="img-fluid" alt="Cloudiness">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <a target="_blank" href="WindSpeed.html">
+                        <img src="Resources/images/Fig4.png" class="img-fluid" alt="WindSpeed">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

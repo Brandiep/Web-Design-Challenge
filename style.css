@@ -26,9 +26,17 @@ h5 {
     color: rgb(5, 197, 197);
     text-align: center;
 }
-.border-info {
-    border-width: 10px;
+.card-title {
+    text-align: left;
 }
+/* this doesnt seem to work */
+/* .border {
+    border-width: medium;
+} */
+/* decided i didnt like this */
+/* .border-custom {
+    border-width: 3px;
+} */
 /* replacing this: justify-content-around, in the class */
 /* .content {
     width:90%;
