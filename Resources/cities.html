@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Data</title>
   </head>
-  <body class="container-fluid bg-light">
-   
+  <body class="bg-light">
+    
+    <!-- nav bar -->
     <!-- nav bar -->
     <nav class="navbar navbar-expand-md navbar-light bg-white">
         <a class="navbar-brand text-white" href="index.html">Latitude</a>
@@ -20,10 +21,10 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">              
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
-              </li>              
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots
@@ -35,34 +36,21 @@
                 <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
                 </div>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="Comparison.html">Comparison</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Comparison.html" tabindex="-1" aria-disabled="true">Comparison</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Data.html">Data </a>
+                <a class="nav-link" href="Data.html">Data <span class="sr-only">(current)</span></a>
               </li>
             </ul>
         </div>
     </nav>
-     
-    <!-- grid with content  -->       
-    <div class="container-fluid py-5">
-        <!-- row 1 -->
-        <div class="row justify-content-around">
-            <div class="col-12 bg-white pt-5">
-                <h1>Data</h1>
-                <hr class="my-4">                   
-            </div> 
-        </div>
-    <!-- row 2      -->
-    <div  class="row">
-      <div class="col-12 pt-2 pb-3 bg-white">
-          <h4>The following table includes all of the data used for plotting during this project.</h4>
-      </div>
-  </div>     
-<!-- row 3      -->
-<div class="row py-5 table-responsive-md">      
-<table border="1" class="table col-sm-12 table-striped">
+
+
+
+
+<div class="container pt-5 bg-white">
+<table border="1" class="table-responsive">
   <thead>
     <tr style="text-align: right;">
       <th>City_ID</th>
@@ -6644,12 +6632,11 @@
     </tr>
   </tbody>
 </table>
-</div> 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+</div>
+<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>
